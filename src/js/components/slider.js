@@ -1,9 +1,9 @@
 const sliderContainer = document.querySelector('#slider');
-const slideRight = document.querySelector('#right-slide');
-const slideLeft = document.querySelector('#left-slide');
+const rightSlider = document.querySelector('#right-slider');
+const leftSlider = document.querySelector('#left-slider');
 const prevButton = document.querySelector('#prev-button');
 const nextButton = document.querySelector('#next-button');
-const slidesLength = slideRight.querySelectorAll('.slider__slide').length;
+const slidesLength = rightSlider.querySelectorAll('.slider__slide').length;
 
 let activeSlideIndexLeft = 0;
 let activeSlideIndexRight = 1;
@@ -37,16 +37,16 @@ const prevRightSlide = () => {
 };
 
 const setLeftSlidePosition = (position) => {
-    slideLeft.style.transform = `translateX(${position})`;
+    leftSlider.style.transform = `translateX(${position})`;
 };
 
 const setRightSlidePosition = (position) => {
-    slideRight.style.transform = `translateY(${position})`;
+    rightSlider.style.transform = `translateY(${position})`;
 };
 
 const changeSlides = (direction) => {
     const sliderHeight = sliderContainer.clientHeight;
-    const leftSliderWidth = slideLeft.clientWidth;
+    const leftSliderWidth = leftSlider.clientWidth;
 
     if (direction === 'next') {
         nextLeftSlide();

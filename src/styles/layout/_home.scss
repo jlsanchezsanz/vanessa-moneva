@@ -1,3 +1,7 @@
+$left-slider-width: 60%;
+$left-slider-width: 60%;
+$right-slider-width: 40%;
+
 .slider {
     height: 100vh;
     overflow: hidden;
@@ -12,13 +16,13 @@
 
         &--left {
             left: 0;
-            width: 65%;
+            width: $left-slider-width;
             display: flex;
         }
 
         &--right {
-            left: 65%;
-            width: 35%;
+            left: $left-slider-width;
+            width: $right-slider-width;
         }
     }
 
@@ -74,12 +78,12 @@
         border: none;
         color: $color-grey-light-1;
         cursor: pointer;
-        height: 40px;
-        left: 65%;
-        padding: 10px;
+        height: 5rem;
+        left: $left-slider-width;
+        padding: 1.5rem;
         position: absolute;
         top: 50%;
-        width: 40px;
+        width: 5rem;
         z-index: 100;
 
         &--next {
