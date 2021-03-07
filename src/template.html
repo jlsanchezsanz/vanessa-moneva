@@ -6,39 +6,128 @@
         <title>Vanessa Moneva</title>
     </head>
     <body>
-        <div class="slider" id="slider">
-            <div class="slider__side slider__side--left" id="left-slider">
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-            </div>
-            <div class="slider__side slider__side--right" id="right-slider">
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-                <div class="slider__slide"></div>
-            </div>
-            <button id="next-button" class="slider__btn slider__btn--next">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__content">
                 <img
-                    class="icon"
-                    src="./assets/icons/arrow-down.svg"
-                    alt="Next"
+                    class="header__logo"
+                    src="assets/images/logo.png"
+                    alt="Vanessa Moneva"
                 />
-            </button>
-            <button id="prev-button" class="slider__btn slider__btn--prev">
-                <img
-                    class="icon"
-                    src="./assets/icons/arrow-up.svg"
-                    alt="Previous"
-                />
-            </button>
-        </div>
+                <h1 class="header__title">
+                    <a href="#" title="Vanessa Moneva">Vanessa Moneva</a>
+                </h1>
+            </div>
+
+            <nav class="header__menu">
+                <!-- Desktop menu -->
+                <!-- <div class="desktop-menu"> -->
+                <ul class="desktop-menu" id="desktop-menu">
+                    <li class="desktop-menu__item">
+                        <a
+                            class="desktop-menu__link"
+                            href="#"
+                            title="Home"
+                            data-route=""
+                            >Home</a
+                        >
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a
+                            class="desktop-menu__link"
+                            href="#"
+                            title="Sobre mí"
+                            data-route="sobre-mi"
+                            >Sobre mí</a
+                        >
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a
+                            class="desktop-menu__link"
+                            href="#"
+                            title="Dermatología integrativa"
+                            data-route="dermatologia-integrativa"
+                            >Dermatología integrativa</a
+                        >
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a
+                            class="desktop-menu__link"
+                            href="#"
+                            title="Consulta"
+                            data-route="consulta"
+                            >Consulta</a
+                        >
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a
+                            class="desktop-menu__link"
+                            href="#"
+                            title="Programa grupal"
+                            data-route="programa-grupal"
+                            >Programa grupal</a
+                        >
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a
+                            class="desktop-menu__link"
+                            href="#"
+                            title="Contacto"
+                            data-route="contacto"
+                            >Contacto</a
+                        >
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a
+                            class="desktop-menu__link"
+                            href="#"
+                            title="Blog"
+                            data-route="blog"
+                            >Blog</a
+                        >
+                    </li>
+                </ul>
+                <!-- </div> -->
+                <!-- Desktop menu -->
+            </nav>
+        </header>
+        <!-- Header -->
+
+        <main>
+            <div class="slider" id="slider">
+                <div class="slider__side slider__side--left" id="left-slider">
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                </div>
+                <div class="slider__side slider__side--right" id="right-slider">
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                </div>
+                <button id="next-button" class="slider__btn slider__btn--next">
+                    <img
+                        class="icon"
+                        src="./assets/icons/arrow-down.svg"
+                        alt="Next"
+                    />
+                </button>
+                <button id="prev-button" class="slider__btn slider__btn--prev">
+                    <img
+                        class="icon"
+                        src="./assets/icons/arrow-up.svg"
+                        alt="Previous"
+                    />
+                </button>
+            </div>
+        </main>
     </body>
 </html>

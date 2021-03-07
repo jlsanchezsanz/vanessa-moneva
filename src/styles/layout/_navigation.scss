@@ -1,2 +1,10 @@
-.navigation {
+.desktop-menu {
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+    padding: 0;
+
+    &__item {
+        margin-left: 3rem;
+    }
 }

@@ -36,3 +36,10 @@ body {
     background-color: $color-primary;
     color: $color-white;
 }
+
+a,
+a:visited,
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
