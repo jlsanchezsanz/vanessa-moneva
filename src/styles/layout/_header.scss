@@ -24,6 +24,10 @@
         letter-spacing: 0.5rem;
     }
 
+    &__link {
+        color: $color-grey-dark-3;
+    }
+
     &__menu {
         align-items: center;
         display: flex;

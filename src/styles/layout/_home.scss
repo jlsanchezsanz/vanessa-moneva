@@ -50,6 +50,7 @@ $right-slider-width: 40%;
     }
 
     &__view-more {
+        color: $color-grey-dark-3;
         font-size: 3rem;
 
         &:hover {
@@ -126,6 +127,50 @@ $right-slider-width: 40%;
         transform: skew(-30deg);
     }
 
-    &__footer {
+    &__dots {
+        bottom: 0;
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        list-style-type: none;
+        padding: 6rem;
+        position: absolute;
+        right: 0;
+        width: $right-slider-width;
+    }
+
+    &__dot-item {
+        cursor: pointer;
+
+        &:not(:first-child) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__dot-link {
+        align-items: center;
+        color: $color-grey-dark-2;
+        display: flex;
+        flex-direction: column;
+
+        &::after {
+            background-color: $color-grey-dark-2;
+            border-radius: 50%;
+            content: '';
+            display: inline-block;
+            height: 7px;
+            margin-top: 1rem;
+            width: 7px;
+        }
+
+        &--active,
+        &:hover {
+            color: $color-grey-dark-3;
+        }
+
+        &--active::after,
+        &:hover::after {
+            background-color: $color-grey-dark-3;
+        }
     }
 }
