@@ -1,12 +1,9 @@
 .desktop-menu {
     display: flex;
+    flex: 1 auto;
     font-size: 2rem;
+    justify-content: space-between;
     list-style: none;
-    padding: 0;
-
-    &__item {
-        margin-left: 3rem;
-    }
 
     &__link {
         color: $color-grey-dark-3;
