@@ -5,6 +5,7 @@ const prevButton = document.querySelector('#prev-button');
 const nextButton = document.querySelector('#next-button');
 const slidesLength = rightSlider.querySelectorAll('.slider__slide').length;
 const sliderDotsContainer = document.querySelector('#slider-dots-container');
+const rightSliderLinks = document.querySelectorAll('.slider__title--right');
 let sliderDotsLinks;
 
 let activeSlideIndexLeft = 0;
@@ -117,3 +118,6 @@ setRightSlidePosition(`-${activeSlideIndexRight * 100}vh`);
 
 prevButton.addEventListener('click', () => changeSlides('prev'));
 nextButton.addEventListener('click', () => changeSlides('next'));
+rightSliderLinks.forEach((link) =>
+    link.addEventListener('click', () => changeSlides('next')),
+);
