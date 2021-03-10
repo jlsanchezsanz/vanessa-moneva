@@ -1,3 +1,5 @@
+import { debounce } from '../utils/debounce';
+
 const sliderContainer = document.querySelector('#slider');
 const rightSlider = document.querySelector('#right-slider');
 const leftSlider = document.querySelector('#left-slider');
@@ -111,6 +113,23 @@ const changeSlides = (direction) => {
     updateActiveDot();
 };
 
+const debouncedScroll = debounce((e) => {
+    e.preventDefault();
+    if (e.deltaY > 0 || e.deltaX > 0) {
+        changeSlides('next');
+    } else {
+        changeSlides('prev');
+    }
+}, 100);
+
+const handleKeyUp = debounce((e) => {
+    if (e.keyCode === 37 || e.keyCode === 38) {
+        changeSlides('prev');
+    } else if (e.keyCode === 39 || e.keyCode === 40) {
+        changeSlides('next');
+    }
+}, 100);
+
 createSliderDots();
 updateActiveDot();
 
@@ -121,3 +140,5 @@ nextButton.addEventListener('click', () => changeSlides('next'));
 rightSliderLinks.forEach((link) =>
     link.addEventListener('click', () => changeSlides('next')),
 );
+window.addEventListener('keyup', handleKeyUp);
+window.addEventListener('wheel', debouncedScroll);
