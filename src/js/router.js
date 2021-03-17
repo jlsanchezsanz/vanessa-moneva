@@ -1,5 +1,6 @@
 import Navigo from 'navigo';
 
+import { AboutMe } from './sections/about-me';
 import { Home } from './sections/home';
 
 export const router = new Navigo();
@@ -17,6 +18,9 @@ router
     .on({
         '/': () => {
             setContent(new Home());
+        },
+        '/sobre-mi': () => {
+            setContent(new AboutMe());
         },
     })
     .resolve();
