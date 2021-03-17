@@ -4538,6 +4538,11 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+navigo@^8.9.1:
+  version "8.10.1"
+  resolved "https://registry.yarnpkg.com/navigo/-/navigo-8.10.1.tgz#1ae0ef8dfa1e9be1ab20dbffaf409d0c302d5994"
+  integrity sha512-0/z6VLjCSXEs1lGGbQm2TBGsJ7C5F4hXu/3cmL6UpG4a3WIluM5ZHAjocZJUxDOCDjNYkxbPc9ToAUqKcHlAzA==
+
 negotiator@0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"

@@ -105,20 +105,24 @@ export class Sliders {
         this.updateActiveDot();
     };
 
+    changeSlidesNext = () => this.changeSlides('next');
+
+    changeSlidesPrev = () => this.changeSlides('prev');
+
     debouncedScroll = debounce((e) => {
         e.preventDefault();
         if (e.deltaY > 0 || e.deltaX > 0) {
-            this.changeSlides('next');
+            this.changeSlidesNext();
         } else {
-            this.changeSlides('prev');
+            this.changeSlidesPrev();
         }
     }, 100);
 
     handleKeyUp = debounce((e) => {
         if (e.keyCode === 37 || e.keyCode === 38) {
-            this.changeSlides('prev');
+            this.changeSlidesPrev();
         } else if (e.keyCode === 39 || e.keyCode === 40) {
-            this.changeSlides('next');
+            this.changeSlidesNext();
         }
     }, 100);
 
@@ -141,16 +145,26 @@ export class Sliders {
 
     listenToEvents = () => {
         this.prevButton.addEventListener('click', () =>
-            this.changeSlides('prev'),
+            this.changeSlidesPrev(),
         );
         this.nextButton.addEventListener('click', () =>
-            this.changeSlides('next'),
+            this.changeSlidesNext(),
         );
         this.rightSliderLinks.forEach((link) =>
-            link.addEventListener('click', () => this.changeSlides('next')),
+            link.addEventListener('click', () => this.changeSlidesNext()),
         );
         window.addEventListener('keyup', this.handleKeyUp);
         window.addEventListener('wheel', this.debouncedScroll);
+    };
+
+    unlistenToEvents = () => {
+        this.prevButton.removeEventListener('click', this.changeSlidesPrev());
+        this.nextButton.removeEventListener('click', this.changeSlidesNext());
+        this.rightSliderLinks.forEach((link) =>
+            link.removeEventListener('click', this.changeSlidesNext),
+        );
+        window.removeEventListener('keyup', this.handleKeyUp);
+        window.removeEventListener('wheel', this.debouncedScroll);
     };
 
     initRightSlide = () => {
@@ -167,7 +181,8 @@ export class Sliders {
         this.listenToEvents();
         this.initRightSlide();
     };
-}
 
-const sliders = new Sliders();
-sliders.init();
+    destroy = () => {
+        this.unlistenToEvents();
+    };
+}

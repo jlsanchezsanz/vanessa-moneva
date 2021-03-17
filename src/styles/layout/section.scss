@@ -1,0 +1,69 @@
+.section {
+    background-color: rgba(251, 251, 251, 0.9);
+    color: rgba(51, 51, 51, 0.8);
+    display: flex;
+    height: 100vh;
+    overflow: scroll;
+    padding: 0 40rem;
+    width: 100vw;
+
+    &__half {
+        width: 50vw;
+    }
+
+    &__title {
+        font-size: 10rem;
+        font-weight: 400;
+        margin: 20rem 0 3rem 0;
+        line-height: 1;
+        position: absolute;
+        -webkit-text-stroke: 2px $color-grey-dark-3;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__content {
+        font-size: 1.5rem;
+        line-height: 2;
+        padding: 40rem 0 5rem 0;
+    }
+
+    &__block {
+        padding: 1rem 0 5rem 0;
+        position: relative;
+    }
+
+    &__secondary-title {
+        position: absolute;
+        top: 0rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 1rem;
+        padding-left: 15rem;
+    }
+
+    &__quote {
+        margin: 5rem 0;
+        position: relative;
+
+        &::before {
+            content: '\201C';
+            color: $color-grey-dark-1;
+            font-family: sans-serif;
+            font-size: 20rem;
+            left: 12rem;
+            line-height: 1;
+            position: absolute;
+            top: -3.75rem;
+            z-index: -1;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.link {
+    text-decoration: underline;
+}
