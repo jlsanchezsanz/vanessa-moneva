@@ -1,7 +1,15 @@
+var path = require('path');
+
 module.exports = {
     entry: {
         main: './src/js/main.js',
         vendor: './src/js/vendor.js',
+    },
+    output: {
+        publicPath: '/',
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     module: {
         rules: [

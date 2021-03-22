@@ -3,7 +3,7 @@ import Navigo from 'navigo';
 import { AboutMe } from './sections/about-me';
 import { Home } from './sections/home';
 
-export const router = new Navigo();
+export const router = new Navigo('/');
 let prevContent = null;
 
 const setContent = (content) => {
