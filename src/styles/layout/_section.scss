@@ -4,7 +4,7 @@
     display: flex;
     height: 100vh;
     overflow: scroll;
-    padding: 0 40rem;
+    padding: 0 8rem;
     width: 100vw;
 
     &__half {
@@ -29,12 +29,10 @@
 
     &__block {
         padding: 1rem 0 5rem 0;
-        position: relative;
     }
 
     &__secondary-title {
-        position: absolute;
-        top: 0rem;
+        margin-bottom: 1rem;
     }
 
     &__paragraph {

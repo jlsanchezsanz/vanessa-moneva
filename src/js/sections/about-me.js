@@ -229,7 +229,7 @@ export class AboutMe {
                                 Hospital 12 de Octubre.
                             </p>
                             <p class="section__paragraph">
-                                Master en la Universidad Complutense de
+                                Máster en la Universidad Complutense de
                                 Madrid de medicina antienvejecimiento.
                             </p>
                             <p class="section__paragraph">
