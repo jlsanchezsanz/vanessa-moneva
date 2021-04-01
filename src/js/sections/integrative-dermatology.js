@@ -126,7 +126,7 @@ export class IntegrativeDermatology {
                             <p class="section__paragraph">
                                 ¿Por qué elegir dermatología integrativa?
                             </p>
-                            <ul>
+                            <ul class="section__list">
                                 <li>
                                     Porque buscas una aproximación integral,
                                     holística y mas natural para sanar tu
@@ -168,7 +168,7 @@ export class IntegrativeDermatology {
                                 brotes, como por ejemplo:
                             </p>
 
-                            <ul>
+                            <ul class="section__list">
                                 <li>Psoriasis</li>
                                 <li>Dermatitis seborreica</li>
                                 <li>Acné</li>

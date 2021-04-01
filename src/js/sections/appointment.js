@@ -22,7 +22,7 @@ export class Appointment {
                                 permita conectarte y recibir.
                             </p>
 
-                            <h3>Primera consulta</h3>
+                            <h3 class="section__tertiary-title">Primera consulta</h3>
                             <p class="section__paragraph">
                                 El objetivo principal de esta consulta es conocerte. También
                                 hablaremos de expectativas y valores personales para poder
@@ -43,7 +43,7 @@ export class Appointment {
                                 revisión por si hubiera alguna duda o necesitaras algún apoyo extra.
                             </p>
 
-                            <h3>Siguientes consultas</h3>
+                            <h3 class="section__tertiary-title">Siguientes consultas</h3>
 
                             <p class="section__paragraph">
                                 En las siguientes revisiones iremos implementando gradualmente el
@@ -62,13 +62,13 @@ export class Appointment {
                                 electrónico como por mensajería móvil.
                             </p>
 
-                            <h3>Antes de la cita</h3>
+                            <h3 class="section__tertiary-title">Antes de la cita</h3>
 
                             <p class="section__paragraph">
                                 Para poder dedicarte el mayor tiempo posible pediremos una serie de
                                 información previa a la cita:
                             </p>
-                            <ul>
+                            <ul class="section__list">
                                 <li>
                                 Adjuntar fotos de la piel según estas indicaciones. (documento
                                 para descargar)
@@ -84,7 +84,7 @@ export class Appointment {
                                 utilizar TODOS los minutos de la visita para TI.
                             </p>
 
-                            <h3>Pide cita</h3>
+                            <h3 class="section__tertiary-title">Pide cita</h3>
 
                             <p class="section__paragraph">
                                 Primera consulta: la duración de esta primera consulta es de unos 90
@@ -96,13 +96,13 @@ export class Appointment {
                                 aproximadamente.
                             </p>
 
-                            <h3>Proceso.</h3>
+                            <h3 class="section__tertiary-title">Proceso.</h3>
 
                             <p class="section__paragraph">
                                 El proceso para llegar a una piel saludable consta de varias etapas.
                             </p>
 
-                            <ul>
+                            <ul class="section__list">
                                 <li>
                                 La primera se basa en el autoconocimiento. La mayoría de nosotros
                                 vivimos desconectados de nuestro cuerpo, de nuestras emociones e
@@ -165,7 +165,7 @@ export class Appointment {
                                 soluciones inmediatas y rápidas no serán duraderas ni profundas.
                             </p>
 
-                            <h3>Básicos</h3>
+                            <h3 class="section__tertiary-title">Básicos</h3>
 
                             <p class="section__paragraph">
                                 La consulta es absolutamente <strong>individualizada</strong>.

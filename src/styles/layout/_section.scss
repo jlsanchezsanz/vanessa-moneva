@@ -32,6 +32,10 @@
     }
 
     &__secondary-title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__tertiary-title {
         margin-bottom: 1rem;
     }
 
@@ -60,6 +64,11 @@
 
     &__img {
         width: 100%;
+    }
+
+    &__list {
+        margin-bottom: 1.5rem;
+        padding-left: 20rem;
     }
 }
 
