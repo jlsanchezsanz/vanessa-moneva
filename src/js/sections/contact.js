@@ -1,4 +1,10 @@
+import { hideTitleOnScroll } from '../utils/scroll';
+
 export class Contact {
+    init = () => {
+        hideTitleOnScroll();
+    };
+
     render = () => {
         return `
             <section class="section">

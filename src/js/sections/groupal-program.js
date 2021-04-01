@@ -1,4 +1,10 @@
+import { hideTitleOnScroll } from '../utils/scroll';
+
 export class GroupalProgram {
+    init = () => {
+        hideTitleOnScroll();
+    };
+
     render = () => {
         return `
             <section class="section">
