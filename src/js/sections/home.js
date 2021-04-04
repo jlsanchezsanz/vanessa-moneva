@@ -20,7 +20,7 @@ export class Home {
                     <div class="slider__slide">
                         <div>
                             <h1 class="slider__title slider__title--left">
-                                Home
+                                <a href="/">Home</a>
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
@@ -30,7 +30,7 @@ export class Home {
                                 nisi impedit, labore dolore ipsum soluta
                                 consequuntur.
                             </p>
-                            <a href="#" class="slider__view-more"
+                            <a href="/" class="slider__view-more"
                                 >&xrarr; Ver más</a
                             >
                         </div>
@@ -38,7 +38,7 @@ export class Home {
                     <div class="slider__slide">
                         <div>
                             <h1 class="slider__title slider__title--left">
-                                Sobre <br />Mí
+                                <a href="sobre-mi">Sobre <br />Mí</a>
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
@@ -48,7 +48,7 @@ export class Home {
                                 nisi impedit, labore dolore ipsum soluta
                                 consequuntur.
                             </p>
-                            <a href="#" class="slider__view-more"
+                            <a href="sobre-mi" class="slider__view-more"
                                 >&xrarr; Ver más</a
                             >
                         </div>
@@ -56,8 +56,10 @@ export class Home {
                     <div class="slider__slide">
                         <div>
                             <h1 class="slider__title slider__title--left">
-                                Dermatología<br />
-                                Integrativa
+                                <a href="dermatologia-integrativa"
+                                    >Dermatología<br />
+                                    Integrativa</a
+                                >
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
@@ -67,7 +69,9 @@ export class Home {
                                 nisi impedit, labore dolore ipsum soluta
                                 consequuntur.
                             </p>
-                            <a href="#" class="slider__view-more"
+                            <a
+                                href="dermatologia-integrativa"
+                                class="slider__view-more"
                                 >&xrarr; Ver más</a
                             >
                         </div>
@@ -75,7 +79,7 @@ export class Home {
                     <div class="slider__slide">
                         <div>
                             <h1 class="slider__title slider__title--left">
-                                Consulta
+                                <a href="consulta">Consulta</a>
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
@@ -85,7 +89,7 @@ export class Home {
                                 nisi impedit, labore dolore ipsum soluta
                                 consequuntur.
                             </p>
-                            <a href="#" class="slider__view-more"
+                            <a href="consulta" class="slider__view-more"
                                 >&xrarr; Ver más</a
                             >
                         </div>
@@ -93,7 +97,9 @@ export class Home {
                     <div class="slider__slide">
                         <div>
                             <h1 class="slider__title slider__title--left">
-                                Programa <br />Grupal
+                                <a href="programa-grupal"
+                                    >Programa <br />Grupal</a
+                                >
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
@@ -103,7 +109,9 @@ export class Home {
                                 nisi impedit, labore dolore ipsum soluta
                                 consequuntur.
                             </p>
-                            <a href="#" class="slider__view-more"
+                            <a
+                                href="programa-grupal"
+                                class="slider__view-more"
                                 >&xrarr; Ver más</a
                             >
                         </div>
@@ -111,7 +119,7 @@ export class Home {
                     <div class="slider__slide">
                         <div>
                             <h1 class="slider__title slider__title--left">
-                                Contacto
+                                <a href="contacto">Contacto</a>
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
@@ -121,7 +129,7 @@ export class Home {
                                 nisi impedit, labore dolore ipsum soluta
                                 consequuntur.
                             </p>
-                            <a href="#" class="slider__view-more"
+                            <a href="contacto" class="slider__view-more"
                                 >&xrarr; Ver más</a
                             >
                         </div>

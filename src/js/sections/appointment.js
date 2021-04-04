@@ -102,7 +102,7 @@ export class Appointment {
                                 aproximadamente.
                             </p>
 
-                            <h3 class="section__tertiary-title">Proceso.</h3>
+                            <h3 class="section__tertiary-title">Proceso</h3>
 
                             <p class="section__paragraph">
                                 El proceso para llegar a una piel saludable consta de varias etapas.
