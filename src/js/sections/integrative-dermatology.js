@@ -1,14 +1,19 @@
-import { hideTitleOnScroll } from '../utils/scroll';
+import { animateImages, hideTitleOnScroll } from '../utils/scroll';
 
 export class IntegrativeDermatology {
     init = () => {
         hideTitleOnScroll();
+        animateImages();
     };
 
     render = () => {
         return `
             <section class="section">
-                <div class="section__half section__half--left"></div>
+                <div class="section__half section__half--left">
+                    <img src="imgs/dermatologia-integrativa.jpg" alt="Dermatología integrativa" class="section__img" />
+                    <img src="imgs/sobre-mi-2.jpg" alt="Dermatología integrativa" class="section__img" />
+                    <img src="imgs/sobre-mi-3.jpg" alt="Dermatología integrativa" class="section__img" />
+                </div>
                 <div class="section__half section__half--right">
                     <h1 class="section__title">Dermatología Integrativa</h1>
 

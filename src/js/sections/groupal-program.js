@@ -1,14 +1,19 @@
-import { hideTitleOnScroll } from '../utils/scroll';
+import { animateImages, hideTitleOnScroll } from '../utils/scroll';
 
 export class GroupalProgram {
     init = () => {
         hideTitleOnScroll();
+        animateImages();
     };
 
     render = () => {
         return `
             <section class="section">
-                <div class="section__half section__half--left"></div>
+                <div class="section__half section__half--left">
+                    <img src="imgs/programa-grupal.jpg" alt="Programa grupal" class="section__img" />
+                    <img src="imgs/sobre-mi-2.jpg" alt="Programa grupal" class="section__img" />
+                    <img src="imgs/sobre-mi-3.jpg" alt="Programa grupal" class="section__img" />
+                </div>
                 <div class="section__half section__half--right">
                     <h1 class="section__title">Programa grupal</h1>
 
@@ -43,12 +48,6 @@ export class GroupalProgram {
                             una unión bonita y equilibrada que nos permita crecer y que nuestra
                             piel florezca bella y sana.
                         </p>
-
-                        <img
-                            class="section__img"
-                            src="./src/assets/images/group-program-chart.png"
-                            alt="Programa grupal"
-                        />
 
                         <p class="section__paragraph">
                             Conectar con uno mismo, es conectar con la naturaleza. Por eso es

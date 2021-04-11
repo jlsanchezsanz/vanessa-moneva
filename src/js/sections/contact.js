@@ -1,14 +1,17 @@
-import { hideTitleOnScroll } from '../utils/scroll';
+import { animateImages, hideTitleOnScroll } from '../utils/scroll';
 
 export class Contact {
     init = () => {
         hideTitleOnScroll();
+        animateImages();
     };
 
     render = () => {
         return `
             <section class="section">
-                <div class="section__half section__half--left"></div>
+                <div class="section__half section__half--left">
+                    <img src="imgs/contacto.jpg" alt="Contacto" class="section__img" />
+                </div>
                 <div class="section__half section__half--right">
                     <h1 class="section__title">Contacto</h1>
 

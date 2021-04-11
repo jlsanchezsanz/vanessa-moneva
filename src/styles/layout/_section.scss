@@ -7,7 +7,16 @@
     width: 100vw;
 
     &__half {
-        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        &--left {
+            align-items: center;
+            justify-content: center;
+            padding: 5rem;
+            position: relative;
+        }
     }
 
     &__title {
@@ -65,7 +74,17 @@
     }
 
     &__img {
-        width: 100%;
+        max-height: 75%;
+        max-width: 35%;
+        opacity: 0;
+        position: fixed;
+        top: 55%;
+        transform: translateY(-50%);
+        transition: opacity 0.4s ease-in;
+
+        &.active {
+            opacity: 1;
+        }
     }
 
     &__list {
