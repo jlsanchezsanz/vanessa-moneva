@@ -18,6 +18,15 @@ const setContent = (content) => {
     prevContent = content;
 };
 
+const navigate = (e) => {
+    const {
+        target: {
+            dataset: { route: route },
+        },
+    } = e;
+    router.navigate(`${route}`);
+};
+
 router
     .on({
         '/': () => setContent(new Home()),
@@ -30,22 +39,13 @@ router
     })
     .resolve();
 
-const menu = document.querySelector('#desktop-menu');
-menu.addEventListener('click', (e) => {
-    const {
-        target: {
-            dataset: { route: route },
-        },
-    } = e;
-    router.navigate(`${route}`);
+const desktopMenu = document.querySelector('#desktop-menu');
+desktopMenu.addEventListener('click', navigate);
+const mobileMenuToggle = document.querySelector('#mobile-menu__toggle');
+const mobileMenu = document.querySelector('#mobile-menu');
+mobileMenu.addEventListener('click', (e) => {
+    navigate(e);
+    mobileMenuToggle.checked = false;
 });
-
 const headerTitle = document.querySelector('#header-title');
-headerTitle.addEventListener('click', (e) => {
-    const {
-        target: {
-            dataset: { route: route },
-        },
-    } = e;
-    router.navigate(`${route}`);
-});
+headerTitle.addEventListener('click', navigate);
