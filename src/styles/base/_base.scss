@@ -33,11 +33,6 @@ body {
     }
 }
 
-::selection {
-    background-color: $color-primary;
-    color: $color-white;
-}
-
 a,
 a:visited,
 a:hover {
