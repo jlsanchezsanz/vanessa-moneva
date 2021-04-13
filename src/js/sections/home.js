@@ -24,11 +24,7 @@ export class Home {
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cum neque quas alias
-                                sapiente illo officiis harum voluptate iusto
-                                excepturi libero perspiciatis odio atque
-                                nisi impedit, labore dolore ipsum soluta
-                                consequuntur.
+                                adipisicing elit.
                             </p>
                             <a href="/" class="slider__view-more"
                                 >&xrarr; Ver más</a
@@ -42,11 +38,7 @@ export class Home {
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cum neque quas alias
-                                sapiente illo officiis harum voluptate iusto
-                                excepturi libero perspiciatis odio atque
-                                nisi impedit, labore dolore ipsum soluta
-                                consequuntur.
+                                adipisicing elit.
                             </p>
                             <a href="sobre-mi" class="slider__view-more"
                                 >&xrarr; Ver más</a
@@ -63,11 +55,7 @@ export class Home {
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cum neque quas alias
-                                sapiente illo officiis harum voluptate iusto
-                                excepturi libero perspiciatis odio atque
-                                nisi impedit, labore dolore ipsum soluta
-                                consequuntur.
+                                adipisicing elit.
                             </p>
                             <a
                                 href="dermatologia-integrativa"
@@ -83,11 +71,7 @@ export class Home {
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cum neque quas alias
-                                sapiente illo officiis harum voluptate iusto
-                                excepturi libero perspiciatis odio atque
-                                nisi impedit, labore dolore ipsum soluta
-                                consequuntur.
+                                adipisicing elit.
                             </p>
                             <a href="consulta" class="slider__view-more"
                                 >&xrarr; Ver más</a
@@ -103,11 +87,7 @@ export class Home {
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cum neque quas alias
-                                sapiente illo officiis harum voluptate iusto
-                                excepturi libero perspiciatis odio atque
-                                nisi impedit, labore dolore ipsum soluta
-                                consequuntur.
+                                adipisicing elit.
                             </p>
                             <a
                                 href="programa-grupal"
@@ -123,11 +103,7 @@ export class Home {
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cum neque quas alias
-                                sapiente illo officiis harum voluptate iusto
-                                excepturi libero perspiciatis odio atque
-                                nisi impedit, labore dolore ipsum soluta
-                                consequuntur.
+                                adipisicing elit.
                             </p>
                             <a href="contacto" class="slider__view-more"
                                 >&xrarr; Ver más</a
@@ -141,11 +117,7 @@ export class Home {
                             </h1>
                             <p class="slider__text">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cum neque quas alias
-                                sapiente illo officiis harum voluptate iusto
-                                excepturi libero perspiciatis odio atque
-                                nisi impedit, labore dolore ipsum soluta
-                                consequuntur.
+                                adipisicing elit.
                             </p>
                             <a href="#" class="slider__view-more"
                                 >&xrarr; Ver más</a
