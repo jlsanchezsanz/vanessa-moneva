@@ -6,16 +6,28 @@
     padding: 0 8rem;
     width: 100vw;
 
+    @include respond(tab-port) {
+        padding: 0 5rem;
+    }
+
     &__half {
         display: flex;
         flex-direction: column;
         width: 50%;
+
+        @include respond(tab-port) {
+            width: auto;
+        }
 
         &--left {
             align-items: center;
             justify-content: center;
             padding: 5rem;
             position: relative;
+
+            @include respond(tab-port) {
+                display: none;
+            }
         }
     }
 
@@ -29,6 +41,11 @@
         z-index: -1;
         -webkit-text-stroke: 2px $color-grey-dark-3;
         -webkit-text-fill-color: transparent;
+
+        @include respond(tab-port) {
+            font-size: 7rem;
+            left: 5%;
+        }
     }
 
     &__content {
@@ -52,6 +69,10 @@
     &__paragraph {
         margin-bottom: 1rem;
         padding-left: 15rem;
+
+        @include respond(tab-port) {
+            padding-left: 5rem;
+        }
     }
 
     &__quote {
@@ -70,6 +91,10 @@
             position: absolute;
             top: -3.75rem;
             z-index: -1;
+
+            @include respond(tab-port) {
+                left: 7rem;
+            }
         }
     }
 
@@ -90,6 +115,10 @@
     &__list {
         margin-bottom: 1.5rem;
         padding-left: 20rem;
+
+        @include respond(tab-port) {
+            padding-left: 10rem;
+        }
     }
 }
 
